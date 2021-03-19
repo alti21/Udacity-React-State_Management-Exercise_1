@@ -6,7 +6,7 @@ class ListMovies extends Component {
     return (
       <ol>
       {this.props.profiles.map(profile => (
-        	<li>
+        	<li key={profile.id}>
        			{this.props.users[profile.userID].name}'s favorite movie is
   				{this.props.movies[profile.favoriteMovieID].name}.
        		</li>
